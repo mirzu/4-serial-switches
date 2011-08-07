@@ -1,0 +1,1 @@
+A quick Arduino sketch that turn on 4 digital out pins when one of four serial inputs are recieved.
