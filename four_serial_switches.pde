@@ -11,7 +11,7 @@ int ledPin4 = 5;
 int button1 = 8;
 int button2 = 9;
 int button3 = 10;
-int button4 = 12;
+int button4 = 11;
 int ledPin13 = 13; // 
 Bounce bouncer1 = Bounce( button1,5 ); 
 Bounce bouncer2 = Bounce( button2,5 ); 
@@ -41,6 +41,7 @@ void loop() {
   digitalWrite(ledPin2, bouncer2.read());
   digitalWrite(ledPin3, bouncer3.read());
   digitalWrite(ledPin4, bouncer4.read());
+  Serial.println(bouncer4.read());
 
  if (Serial.available()) { // If data is available to read,
  val = Serial.read(); // read it and store it in val
